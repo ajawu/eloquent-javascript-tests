@@ -4,9 +4,12 @@
  * @returns {String} Returns the generated triangle as a string
  */
 const generateTriangle = (triangleHeight = 7) => {
-    let triangle = '';
     // Enter code to generate the triangle here
-
+    let triangle = "";
+    while (triangle.length <= 6) {
+        count += "#";
+        console.log(triangle);
+    }
     return triangle;
 }
 

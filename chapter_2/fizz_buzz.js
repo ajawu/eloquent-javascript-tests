@@ -10,6 +10,17 @@
 const fizzBuzzGenerator = () => {
     let fizzBuzzOutput = '';
     // Enter code to generate fizzbuzz and numbers here
+    for (let i = 0; i <= 100; i++) {
+        if (i % 3 == 0) {
+            fizzBuzzOutput = "fizz <br>";
+        } else if (i % 5 == 0) {
+            fizzBuzzOutput = "buzz <br>";
+        } else if (i % 3 && i % 5) {
+            fizzBuzzOutput = "fizzbuzz <br>";
+        } else {
+            console.log(i);
+        }
+    }
 
     return fizzBuzzOutput;
 }
